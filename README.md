@@ -29,7 +29,7 @@ Jeff DeRosalia, Dan Rosenbaum
 
 ## Link
 
-https://ryanascherr.github.io/react-portfolio/
+https://ryanascherr.github.io/ryan-portfolio/
 
 ## Contact Information
 
