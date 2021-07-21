@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    width: 100%;
+}
+
+button {
+    background-color: white;
+    color: #16405C;
+    padding: 10px;
+}
+
+a {
+    color: #16405C;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+.header {
+    padding: 50px 0 0 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #16405C;
+}
+
+.header a {
+    color: white;
+}
+
+.header a:hover {
+    color: white;
+}
+
+.name {
+    font-size: 400%;
+}
+
+.headshot-container {
+    max-width: 100px;
+    margin: 0 15px 15px 15px;
+}
+
+.about, .portfolio, .contact, .resume {
+    width: 90%;
+    margin: 30px auto;
+    color: #16405C;
+    padding-bottom: 200px;
+}
+
+.resume {
+    width: 80%;
+}
+
+/* .resume p, .resume li {
+    font-size: 150%;
+} */
+
+.about {
+    width: 75%;
+}
+
+/* .test3 {
+    border: 2px solid #16405C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+} */
+
+.about p {
+    font-size: 200%;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #16405C;
+    color: white; */
+}
+
+.headshot {
+    width: 100%;
+    border: 5px solid #16405C;
+    border-radius: 50%;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.project {
+    width: 100%;
+    margin: 15px;
+    position: relative;
+}
+
+.image-label {
+    background-color: #16405C;
+    opacity: .9;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+  }
+
+.pic-container {
+    border: 1px solid #16405C;
+}
+
+.pic-container img {
+    max-width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.project-name {
+    padding: 10px;
+    background-color: #16405C;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.text {
+    color: white;
+    /* font-size: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.buttons button {
+    margin: 0 10px;
+    background-color: white;
+    color: #16405C;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #16405C;
+}
+
+.button a {
+    color: #16405C;
+    text-decoration: none;
+}
+
+.buttons a:hover .button {
+    border: 2px solid white;
+    background-color: #16405C;
+    color: white;
+}
+
+.contact h1 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 200%;
+}
+
+.resume p, .resume li {
+    font-size: 150%;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    margin: 15px;
+}
+
+.contact-links button {
+    border-radius: 10px;
+    border: 2px solid #16405C;
+    padding: 20px;
+}
+
+.contact-links a:hover .link {
+    border: 2px solid white;
+    background-color: #16405C;
+    color: white;
+}
+
+.footer {
+    background-color: #16405C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon-container {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.icon-container img {
+    max-width: 100%;
+}
+
+.icon-container:hover {
+    transform: scale(1.2);
+}
+
+.resume ul {
+    margin-bottom: 30px;
+}
+
+.resume-box {
+    border: 2px solid #16405C;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.resume-box h2 {
+    color: white;
+    background-color: #16405C;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.education h4 {
+    margin-bottom: 20px;
+}
+
+.bob {
+    animation-name: bob;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .45s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact h3 {
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    font-size: 150%;
+    width: 100%;
+}
+
+.contact .submit {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #16405C;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #16405C;
+    border: 2px solid white;
+}
+
+textarea {
+    width: 50%;
+}
+
+@keyframes bob {
+    from {
+        top: -2.5px;
+    }
+    to {
+        top: 2.5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact input, .contact textarea {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .project {
+        max-width: 45%;
+    }
+
+    .contact input, .contact textarea {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .resume-box {
+        width: 45%;
+        margin: 15px;
+    }
+}
+
